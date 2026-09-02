@@ -2,9 +2,27 @@
 <html>
 <body>
 
-<h1>DuitseBOOST de</h1>
-  
-<p>Welkom bij DuitseBOOST</p>
-  
+  <h1>DuitseBOOST</h1>
+
+<h2>Inloggen</h2>
+
+<input id="naam" placeholder="Gebruikersnaam">
+
+  <button onclick="login()">Inloggen</button>
+
+  <p id="welkom"></p>
+
+  <script>
+    function login(){
+
+      let naam =
+        document.getElementById("naam").value;
+
+      document.getElementById("welkom").innerHTML =
+        "Welkom " + naam + "!";
+
+    }
+  </script>
+
 </body>
 </html>
