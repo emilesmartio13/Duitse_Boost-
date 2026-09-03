@@ -23,7 +23,27 @@
   <li>Level 2</li>
   <li>Level 3</li>
 </ul>
+  <h2>Quiz</h2>
+
+  <p>Wat betekent Hund?</p>
+
+<button onclick="goed()">Hond</button>button>
+  <button onclick="fout()">Kat</button>button>
+  <p id="quiz></p>
+
+</p>
   <script>
+    function goed(){
+    document.getElementById("quiz").innerHTML =
+    "Goed!";
+    }
+
+    function fout(){
+    document.hetElementById("quiz").innerHTML =
+    "Fout!";
+    }
+
+
     function login(){
 
       let naam =
