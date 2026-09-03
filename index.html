@@ -10,7 +10,12 @@
 
   <button onclick="login()">Inloggen</button>
 
-  <p id="welkom"></p>
+ <h2>XP</h2>
+
+<p>XP: <span id="xp">0</span></p>
+
+<button onclick="xpPlus()">+10 XP</button>
+ <p id="welkom"></p>
 
   <script>
     function login(){
@@ -21,6 +26,11 @@
       document.getElementById("welkom").innerHTML =
         "Welkom " + naam + "!";
 
+    }
+    let xp = o;
+    function xpPlus(){
+      xp += 10;
+      document.getElementById("xp").innerHTML = xp;
     }
   </script>
 
